@@ -7,7 +7,7 @@
 - [Some organizations](https://stackshare.io/) use it
 - Other [templating languages](https://twig.symfony.com) in different ecosystems are similar
 
---- 
+
 
 ## Handlebars
 
@@ -26,7 +26,7 @@ and provides
 
 Check out the [the documentation](https://handlebarsjs.com/).
 
---- 
+
 
 ## Concepts
 
@@ -43,7 +43,7 @@ Use it with:
 - Plain JavaScript on the front end
 - Express
 
----
+
 
 ## It's not always the right choice
 There are [tradeoffs](https://www.youtube.com/watch?v=EmGfdlixQHo) to using templating languages, but they are powerful tools to separate responsibilities in your project.
