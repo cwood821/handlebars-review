@@ -12,8 +12,7 @@
 </head>
 
 <body>
-
-
+  <!-- This is a handlebars template -->
   <script id="book-list" type="text/x-handlebars-template">
     <ul>
       {{#each books}}
@@ -24,7 +23,6 @@
     </ul>
   </script>
 
-  <!-- Where we append our books -->
   <div class="container">
     <h1>Christian&rsquo;s Booksshelf 📚</h1>
     <div id="books">
@@ -41,7 +39,7 @@
       const bookListHtml = bookTemplate({
         books: books
       });
-
+      // Append the generated html to the books div
       document.querySelector("#books").innerHTML = bookListHtml;
     }
 

@@ -4,11 +4,17 @@
 
 <div class="container">
 
+  {{!-- Basic data --}}
+  <p>There are {{ volcanoes.length }} volcanoes</p>
+
+  {{!-- Logging and context --}}
+  {{!-- {{log "Look at me!"}} --}}
+  {{!-- {{log volcanoes}} --}}
+
+  {{!-- Iteration --}}
   {{!-- {{#each volcanoes}}
     {{> volcano-card volcano=this}}
   {{/each}} --}}
-
-  {{> volcano-table volcanoes=volcanoes }}
 
   {{!-- <table>
     <tr>
@@ -29,4 +35,7 @@
     </tr>
     {{/each}}
     <table> --}}
+
+  {{!-- Using partials --}}
+  {{!-- {{> volcano-table volcanoes=volcanoes }} --}}
 </div>
