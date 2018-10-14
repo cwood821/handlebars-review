@@ -4,7 +4,7 @@
 ## Why should I learn this thing and not the other?
 
 - Default templating language of [Ember](https://www.emberjs.com/)
-- [Some organizations](https://stackshare.io/) use it
+- [Some organizations](https://stackshare.io/handlebars) use it
 - Other [templating languages](https://twig.symfony.com) in different ecosystems are similar
 
 
