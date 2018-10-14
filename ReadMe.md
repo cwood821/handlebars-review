@@ -3,18 +3,20 @@
 ---
 ## Handlebars
 
-Are
+A templating language that
+
+is
 
 - [Declarative](https://en.wikipedia.org/wiki/Declarative_programming)
 - Expressive
 
-Provide
+and provides
 
 - [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) ([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)/[Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle))
 - *View layer* of Model-View-Controller Design Pattern/Architecture
 
 
-Always read [the documentation](https://handlebarsjs.com/).
+Check out the [the documentation](https://handlebarsjs.com/).
 
 ---
 
