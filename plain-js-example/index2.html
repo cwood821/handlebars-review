@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Handlebars Test!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cherry+Swash" rel="stylesheet">
+  <link href="assets/style/style.css" rel="stylesheet">
+  <script src="assets/js/handlebars.min-latest.js"></script>
+</head>
+
+<body>
+
+
+  <script id="book-list" type="text/x-handlebars-template">
+    <ul>
+      {{#each books}}
+        <li>
+          {{#if this.favorite }}
+            🔥
+          {{/if}}
+          {{ this.title }}, {{ this.author }}
+        </li>
+      {{/each}}
+    </ul>
+  </script>
+
+  <!-- Where we append our books -->
+  <div class="container">
+    <h1>Christian&rsquo;s Booksshelf 📚</h1>
+    <div id="books">
+    </div>
+
+    <div id="newBookForm">
+      <input type="text" placeholder="Title" id="newBookTitle">
+      <input type="text" placeholder="Author" id="newBookAuthor">
+      <button id="addNewBookBtn">Add it</button>
+    </div>
+  </div>
+
+  <script>
+    function renderBooks(books) {
+      // Grab the template definition in the script
+      const bookListSource = document.querySelector("#book-list").innerHTML;
+      // Compile the template
+      let bookTemplate = Handlebars.compile(bookListSource);
+      // Pass data to template
+      const bookListHtml = bookTemplate({
+        books: books
+      });
+
+      document.querySelector("#books").innerHTML = bookListHtml;
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const booksOnMyShelf = [{
+          title: "Debt: The First 5,000 Years",
+          author: "David Graeber"
+        },
+        {
+          title: "The Protestant Ethic and the Spirit of Capitalism",
+          author: "Max Weber"
+        },
+        {
+          title: "Moby Dick",
+          author: "Herman Melville"
+        },
+        {
+          title: "East of Eden",
+          author: "John Steinbeck",
+          favorite: true
+        }
+      ];
+
+      document.querySelector("#addNewBookBtn")
+        .addEventListener("click", event => {
+          const newBook = {
+            title: document.querySelector("#newBookTitle").value,
+            author: document.querySelector("#newBookAuthor").value,
+          };
+          booksOnMyShelf.push(newBook);
+          renderBooks(booksOnMyShelf);
+        });
+
+
+      renderBooks(booksOnMyShelf);
+    });
+  </script>
+
+</body>
+
+</html>
