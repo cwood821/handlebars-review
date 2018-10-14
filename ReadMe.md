@@ -36,7 +36,6 @@ Use it with:
 ---
 
 ## Concepts
-Concepts:
 
 - Context
 - Loops
