@@ -10,7 +10,7 @@ Are
 
 Provide
 
-- Separation of concerns (DRY/Single Responsibility Principle)
+- [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) ([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)/[Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle))
 - *View layer* of Model-View-Controller Design Pattern/Architecture
 
 
@@ -27,8 +27,9 @@ Always read [the documentation](https://handlebarsjs.com/).
 --- 
 ## You can use it on the front and backend
 
-- Use it with plain JavaScript
-- Use it with Express
+Use it with:
+- Plain JavaScript on the front end
+- Express
 
 ---
 
