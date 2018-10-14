@@ -1,6 +1,14 @@
 # {{ Handlebars }} Review
 
----
+
+## Why should I learn this thing and not the other?
+
+- Default templating language of [Ember](https://www.emberjs.com/)
+- [Some organizations](https://stackshare.io/) use it
+- Other [templating languages](https://twig.symfony.com) in different ecosystems are similar
+
+--- 
+
 ## Handlebars
 
 A templating language that
@@ -18,22 +26,7 @@ and provides
 
 Check out the [the documentation](https://handlebarsjs.com/).
 
----
-
-## Why should I learn this thing and not the other?
-
-- Default templating language of [Ember](https://www.emberjs.com/)
-- [Some organizations](https://stackshare.io/) use it
-- Other [templating languages](https://twig.symfony.com) in different ecosystems are similar
-
 --- 
-## You can use it on the front and backend
-
-Use it with:
-- Plain JavaScript on the front end
-- Express
-
----
 
 ## Concepts
 
@@ -41,6 +34,14 @@ Use it with:
 - Loops
 - Partials
 - Conditionals/Helpers
+
+---
+
+## You can use it on the front and backend
+
+Use it with:
+- Plain JavaScript on the front end
+- Express
 
 ---
 
